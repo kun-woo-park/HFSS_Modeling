@@ -8,7 +8,7 @@ python3 HFSS_modeling.py
 ```
 
 ## Train 목적
-본 과제는 HFSS라는 High frequency simulator의 resonance frequency의 계산 값보다 더 나은 성능을 가지는 resonance frequency 예측 함수를 모델링 하는 것을 목적으로 한다. 주어진 데이터는 # of turns, permitivity(surface), LS/LW, SEP, permitivity(subsidence), OD, Analytic(resonance frequency) 로 이루어져 있다. 여기서 Analytic은 실제 실험으로 얻어진 resonance frequency값이다. 이에 Analytic 이외의 6개의 feature로 Analytic를 표현하는 모델을 구축하고자 한다. 모델 구축 후 작성된 내용을 [LCpressure_PRA.pdf](LCpressure_PRA.pdf) 에서 확인 할 수 있다. 정리되지 않은 실험 내용은 [HFSS_train](https://github.com/aisl-khu/HFSS-train)에서 확인할 수 있다.
+본 과제는 HFSS라는 High frequency simulator의 resonance frequency의 계산 값보다 더 나은 성능을 가지는 resonance frequency 예측 함수를 모델링 하는 것을 목적으로 한다. 주어진 데이터는 # of turns, permittivity(surface), LS/LW, SEP, permittivity(subsidence), OD, Analytic(resonance frequency) 로 이루어져 있다. 여기서 Analytic은 실제 실험으로 얻어진 resonance frequency값이다. 이에 Analytic 이외의 6개의 feature로 Analytic를 표현하는 모델을 구축하고자 한다. 모델 구축 후 작성된 내용을 [LCpressure_PRA.pdf](LCpressure_PRA.pdf) 에서 확인 할 수 있다. 정리되지 않은 실험 내용은 [HFSS_train](https://github.com/aisl-khu/HFSS-train)에서 확인할 수 있다.
 
 ## 모델 구현
 총 세가지 모델을 규정했으며, 각 모델은 다음을 가정한다.
